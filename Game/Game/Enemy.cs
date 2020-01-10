@@ -21,12 +21,16 @@ namespace Game.Game
 
         public void PrintInfo()
         {
-            Console.WriteLine($"Enemy '{name}' position: {x}:{y}");
+            Console.WriteLine($"Enemy '{name}'(ID:{id}) position: {x}:{y}");
         }
 
         public int MoveDown()
         {
             return y--;
+        }
+        public int GetId()
+        {
+            return id;
         }
     }
 }
