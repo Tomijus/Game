@@ -4,33 +4,22 @@ using System.Text;
 
 namespace Game.Game
 {
-    class Enemy
+    class Enemy : Unit
     {
-        private int id;
-        private int x;
-        private int y;
-        private string name;
+        private int Id;
 
-        public Enemy(int id, int x, int y, string name)
+        public Enemy(int id, int x, int y, string name) : base(x, y, name)
         {
-            this.id = id;
-            this.x = x;
-            this.y = y;
-            this.name = name;
-        }
-
-        public void PrintInfo()
-        {
-            Console.WriteLine($"Enemy '{name}'(ID:{id}) position: {x}:{y}");
+            Id = id;
         }
 
         public int MoveDown()
         {
-            return y--;
+            return Y--;
         }
         public int GetId()
         {
-            return id;
+            return Id;
         }
     }
 }

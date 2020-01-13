@@ -4,31 +4,20 @@ using System.Text;
 
 namespace Game.Game
 {
-    class Hero
+    class Hero : Unit
     {
-        private int x;
-        private int y;
-        private string name;
 
-        public Hero(int x, int y, string name)
+        public Hero(int x, int y, string name) : base(x, y, name)
         {
-            this.x = x;
-            this.y = y;
-            this.name = name;
-        }
-
-        public void PrintInfo()
-        {
-            Console.WriteLine($"Hero '{name}' position {x}:{y}");
         }
 
         public int MoveLeft()
         {
-            return x--;
+            return X--;
         }
         public int MoveRight()
         {
-            return x++;
+            return X++;
         }
     }
 }
