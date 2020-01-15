@@ -4,11 +4,9 @@ using System.Text;
 
 namespace Game.GUI
 {
-    class TextLine : GuiObject
+    class CreditWindow : Window
     {
-        private string data;
-
-        public TextLine(int x, int y, int width, int height) : base(x, y, width, height)
+        public CreditWindow(int x, int y, int width, int height, char border) : base(x, y, width, height, border)
         {
 
         }

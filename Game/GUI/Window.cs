@@ -4,18 +4,19 @@ using System.Text;
 
 namespace Game.GUI
 {
-    class TextLine : GuiObject
+    class Window : GuiObject
     {
-        private string data;
+        private Frame border;
 
-        public TextLine(int x, int y, int width, int height) : base(x, y, width, height)
+        public Window (int x, int y, int width, int height, char border) : base(x, y, width, height)
         {
-
+            
         }
 
         public void Render()
         {
 
         }
+
     }
 }
