@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Game.GUI
 {
-    class GuiObject
+    abstract class GuiObject
     {
         protected int X;
         protected int Y;
@@ -18,5 +18,7 @@ namespace Game.GUI
             Width = width;
             Height = height;
         }
+
+        public abstract void Render();
     }
 }

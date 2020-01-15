@@ -11,7 +11,7 @@ namespace Game.GUI
 
         }
 
-        public void Render()
+        public override void Render()
         {
 
         }

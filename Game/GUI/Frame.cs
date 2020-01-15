@@ -12,7 +12,7 @@ namespace Game.GUI
         {
             RenderChar = renderChar;
         }
-        public void Render()
+        public override void Render()
         {
 
         }
