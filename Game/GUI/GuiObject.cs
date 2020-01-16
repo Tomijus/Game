@@ -6,10 +6,10 @@ namespace Game.GUI
 {
     abstract class GuiObject
     {
-        protected int X;
-        protected int Y;
-        protected int Height;
-        protected int Width;
+        protected int X { get; set; }
+        protected int Y { get; set; }
+        protected int Height { get; set; }
+        protected int Width { get; set; }
 
         public GuiObject(int x, int y, int width, int height)
         {

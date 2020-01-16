@@ -6,8 +6,8 @@ namespace Game.Game
 {
     class Unit
     {
-        protected int X;
-        protected int Y;
+        protected int X { get; set; }
+        protected int Y { get; set; }
         private string Name;
 
         public Unit(int x, int y, string name)

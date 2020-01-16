@@ -19,5 +19,9 @@ namespace Game.Game
         {
             return X++;
         }
+        public override void Render()
+        {
+
+        }
     }
 }
